@@ -1,0 +1,5 @@
+'use strict';
+const json=document.getElementById('json'),license=document.getElementById('license');
+chrome.storage.local.get(['erjCustomRatings','erjLicense']).then(d=>{json.value=JSON.stringify(d.erjCustomRatings||{},null,2);license.value=d.erjLicense||'';}).catch(()=>{document.getElementById('ratings-status').textContent='读取设置失败，请刷新重试。';});
+for(const [form,type,target] of [['ratings-form','ERJ_SAVE_CUSTOM','ratings-status'],['license-form','ERJ_SAVE_LICENSE','license-status']])document.getElementById(form).onsubmit=async e=>{e.preventDefault();const status=document.getElementById(target);try{const r=await chrome.runtime.sendMessage({type,json:json.value,license:license.value});status.textContent=r.ok?'已保存。':r.error;}catch{status.textContent='保存失败，请重试。';}};
+document.getElementById('sample').onclick=async()=>{try{const r=await fetch(chrome.runtime.getURL('src/data/sample-ratings.json'));if(!r.ok)throw new Error();json.value=JSON.stringify(await r.json(),null,2);document.getElementById('ratings-status').textContent='已填入示例格式，尚未保存。';}catch{document.getElementById('ratings-status').textContent='读取示例失败。';}};

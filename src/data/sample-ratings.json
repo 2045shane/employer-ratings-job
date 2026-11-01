@@ -1,0 +1,122 @@
+{
+  "Google": {
+    "overall": 3.3,
+    "workLife": 3.0,
+    "compensation": 3.5,
+    "recommendPct": 60,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "Microsoft": {
+    "overall": 3.5,
+    "workLife": 3.3,
+    "compensation": 3.8,
+    "recommendPct": 62,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "Amazon": {
+    "overall": 3.7,
+    "workLife": 3.6,
+    "compensation": 4.1,
+    "recommendPct": 64,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "Apple": {
+    "overall": 3.9,
+    "workLife": 3.9,
+    "compensation": 4.4,
+    "recommendPct": 66,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "Meta": {
+    "overall": 4.1,
+    "workLife": 4.2,
+    "compensation": 4.7,
+    "recommendPct": 68,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "Netflix": {
+    "overall": 4.3,
+    "workLife": 4.5,
+    "compensation": 3.5,
+    "recommendPct": 70,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "Salesforce": {
+    "overall": 4.5,
+    "workLife": 3.0,
+    "compensation": 3.8,
+    "recommendPct": 72,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "Adobe": {
+    "overall": 4.7,
+    "workLife": 3.3,
+    "compensation": 4.1,
+    "recommendPct": 74,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "IBM": {
+    "overall": 3.3,
+    "workLife": 3.6,
+    "compensation": 4.4,
+    "recommendPct": 76,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "Oracle": {
+    "overall": 3.5,
+    "workLife": 3.9,
+    "compensation": 4.7,
+    "recommendPct": 78,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "Tesla": {
+    "overall": 3.7,
+    "workLife": 4.2,
+    "compensation": 3.5,
+    "recommendPct": 80,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "NVIDIA": {
+    "overall": 3.9,
+    "workLife": 4.5,
+    "compensation": 3.8,
+    "recommendPct": 82,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "ByteDance": {
+    "overall": 4.1,
+    "workLife": 3.0,
+    "compensation": 4.1,
+    "recommendPct": 84,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "Alibaba": {
+    "overall": 4.3,
+    "workLife": 3.3,
+    "compensation": 4.4,
+    "recommendPct": 86,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  },
+  "Tencent": {
+    "overall": 4.5,
+    "workLife": 3.6,
+    "compensation": 4.7,
+    "recommendPct": 88,
+    "source": "示例数据（非真实评分）",
+    "updated": "2026-11-01"
+  }
+}

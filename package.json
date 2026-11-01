@@ -1,0 +1,9 @@
+{
+  "name": "employer-ratings-job",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/",
+    "license": "node scripts/gen-license.mjs"
+  }
+}

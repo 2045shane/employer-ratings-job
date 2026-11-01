@@ -1,0 +1,3 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');
+const {normalizeCompany:n}=require('../src/lib/company');
+test('规范化后缀、大小写、空白及 and',()=>{for(const suffix of ['Inc.','LLC','Ltd.','Corp.','GmbH','有限公司'])assert.equal(n('  Acme '+suffix),'acme');assert.equal(n(' A&B Inc. '),n('a and b'));assert.equal(n('MICROSOFT Corporation'),'microsoft');assert.equal(n('  腾讯有限公司 '),'腾讯');assert.equal(n(null),'');assert.equal(n('Lincoln'),'lincoln');});

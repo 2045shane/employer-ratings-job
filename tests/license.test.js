@@ -1,0 +1,2 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const {createHash}=require('node:crypto');const l=require('../src/lib/license');
+test('ERJ1 SHA-256 正确与错误许可',async()=>{const expected='ERJ1.'+createHash('sha256').update('employer-ratings-job:unlock:v1').digest('hex');assert.equal(await l.issueLicense(),expected);assert.equal(await l.verifyLicense(' '+expected+' '),true);for(const token of ['',null,'ERJ1.bad',expected.slice(0,-1)+'z',expected.replace('ERJ1','FSC1')])assert.equal(await l.verifyLicense(token),false);});
