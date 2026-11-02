@@ -8,8 +8,7 @@
     "activeTab"
   ],
   "host_permissions": [
-    "https://www.linkedin.com/jobs/*",
-    "https://*.indeed.com/*"
+    "https://www.linkedin.com/jobs/*"
   ],
   "icons": {
     "16": "icons/icon16.png",
@@ -33,8 +32,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.linkedin.com/jobs/*",
-        "https://*.indeed.com/*"
+        "https://www.linkedin.com/jobs/*"
       ],
       "js": [
         "src/content/selectors.js",
