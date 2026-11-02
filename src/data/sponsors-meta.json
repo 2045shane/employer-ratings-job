@@ -1,0 +1,15 @@
+{
+  "source": "GOV.UK Register of licensed sponsors: workers",
+  "sourceUrl": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "csvUrl": "https://assets.publishing.service.gov.uk/media/6ae46c20976f73ef5cfb68ac/SP_-_Worker_and_Temporary_Worker_Web_Register_-_2026-10-30.csv",
+  "csvDate": "2026-10-30",
+  "retrieved": "2026-11-02",
+  "route": "Skilled Worker",
+  "orgCount": 122378,
+  "sha256": "424aecd4b220c3a6d6d1b752427c695c6e13d0c0d64b1037df4d4f625176f1aa",
+  "namesFile": "src/data/sponsors-names.txt.gz",
+  "licence": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "licenceName": "Open Government Licence v3.0",
+  "contains": "Contains public sector information licensed under the Open Government Licence v3.0.",
+  "note": "Whether the organisation name appears on the Skilled Worker route in this CSV. Not an employer review score. Town/City, County, and the Home Office licence grade (CSV column Type & Rating) are omitted."
+}
