@@ -1,9 +1,10 @@
 {
   "name": "employer-ratings-job",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "test": "node --test tests/*.js",
-    "license": "node scripts/gen-license.mjs"
+    "license": "node scripts/gen-license.mjs",
+    "sponsors:refresh": "node scripts/refresh-sponsors.mjs"
   }
 }

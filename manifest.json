@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "招聘页显示雇主评分",
-  "version": "0.1.0",
-  "description": "在招聘页手动查看本地雇主评分，内置数据仅为示例。",
+  "name": "招聘页查询签证担保",
+  "version": "0.2.0",
+  "description": "在 LinkedIn 职位页查询雇主是否出现在英国官方 Skilled Worker 担保名册。不是雇主评分。",
   "permissions": [
     "storage",
     "activeTab"
@@ -35,6 +35,8 @@
         "https://www.linkedin.com/jobs/*"
       ],
       "js": [
+        "src/lib/company.js",
+        "src/lib/sponsors.js",
         "src/content/selectors.js",
         "src/content/content.js"
       ],
