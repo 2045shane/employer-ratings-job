@@ -21,7 +21,7 @@ chrome.runtime.onMessage.addListener((m,sender,reply)=>{
   const key=api.jobKey(sender.url||'');
   if(!sender.tab||!key)throw new Error('请打开带职位 ID 的 LinkedIn 或 Indeed 职位详情。');
   const company=typeof m.company==='string'?m.company.trim().slice(0,200):'';
-  if(!company)throw new Error('未识别公司名；选择器尚未经真站验收，Indeed 仅为占位。');
+  if(!company)throw new Error('未识别公司名。请打开 LinkedIn 职位详情页后重试。');
   const data=await chrome.storage.local.get(api.STORAGE_KEYS.custom);
   const rating=api.findRating(company,await sample,data[api.STORAGE_KEYS.custom]||{});
   const quota=await store.consume(key);

@@ -39,7 +39,7 @@
 
 运行 `node scripts/gen-license.mjs` 或 `npm run license` 生成 `ERJ1.` 许可，在设置中保存。许可按 SHA-256 和固定种子 `employer-ratings-job:unlock:v1` 校验，解锁后不限次数。留空保存可清除许可。公开算法与本地存储不具备防破解或可信付费鉴权能力，MVP 未接入支付。
 
-运行 `npm test`（`node --test tests/`），无需安装任何依赖。Node.js 18+。后台通过扩展自身 URL 读取 JSON，页面不直接读取数据，因此不需要 web_accessible_resources。仅申请 storage、activeTab，站点范围仅为 LinkedIn jobs 和 Indeed；没有分析、远程脚本或评分 API 请求。
+运行 `npm test`（`node --test tests/*.js`），无需安装任何依赖。Node.js 18+。后台通过扩展自身 URL 读取 JSON，页面不直接读取数据，因此不需要 web_accessible_resources。仅申请 storage、activeTab，站点范围仅为 LinkedIn jobs；没有分析、远程脚本或评分 API 请求。
 
 ## 已知限制及 TODO
 
